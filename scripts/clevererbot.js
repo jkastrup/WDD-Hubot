@@ -37,5 +37,4 @@ module.exports = function(robot) {  // export the function as a module
             return res.send(response);  // send cleverbot's response
         });
     });
-
 };
