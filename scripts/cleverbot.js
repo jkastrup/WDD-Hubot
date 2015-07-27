@@ -30,7 +30,6 @@ module.exports = function(robot) {  // export the function as a module
 
     robot.hear(/@hubot (.*)/i, function(res) {
         var message = res.match[1];  // stores into message the string after "@hubot"
-
         bot.ask(message, function(err, response) {
             if (err) {  // handle and error by throwing an exception
                 throw err;
