@@ -8,7 +8,7 @@
 //    None
 //
 //  Commands:
-//    $ <your converstaion with cleverbot>
+//    @hubot <your conversation with hubot / cleverbot>
 //
 //  Author:
 //    Ben Forshey
