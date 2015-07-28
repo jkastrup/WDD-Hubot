@@ -9,9 +9,7 @@
 //
 //  Commands:
 //    Hubot word - reply you haven't heard?
-//
 //    Hubot word yes - reply good I was worried.
-//
 //    Hubot word no - reply song portion array
 //
 //  Author:
