@@ -17,11 +17,11 @@ module.exports = function(robot) {  // export the function as a module
     var cleverBot = require('cleverbot.io'),
         userAPI = process.env.CLEVERBOT_API_USER,  // API user ID as an environmental variable (since public repository)
         keyAPI = process.env.CLEVERBOT_API_KEY,  // API key as an environmental variable (since public repository)
-        bot = new cleverBot(userAPI, keyAPI);
+        persona = new cleverBot(userAPI, keyAPI);
 
-    bot.setNick('WDD Hubot');  // give the session a name
+    persona.setNick('WDD-Hubot');  // give the session a name
 
-    bot.create(function(err, session) {  // create new instance
+    persona.create(function(err, session) {  // create new instance
         if (err) {  // handle an error with session name info
             console.error('Error in Session ' + session);
             throw err;
@@ -30,7 +30,7 @@ module.exports = function(robot) {  // export the function as a module
 
     robot.hear(/@hubot (.*)/i, function(res) {
         var message = res.match[1];  // stores into message the string after "@hubot"
-        bot.ask(message, function(err, response) {
+        persona.ask(message, function(err, response) {
             if (err) {  // handle and error by throwing an exception
                 throw err;
             }
