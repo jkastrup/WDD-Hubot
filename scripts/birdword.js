@@ -1,24 +1,21 @@
-/**
- * Description
- *
- * Bird is the Word
- *
- * Dependencies
- *
- * None
- *
- * Commands
- *
- * Hubot word - reply you haven't heard?
- *
- * Hubot word yes - reply good I was worried.
- *
- * Hubot word no - reply song portion array
- *
- * Author
- *
- * Jeramie Brehm
- */
+//  Description:
+//    Bird is the Word
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot word - reply you haven't heard?
+//
+//    Hubot word yes - reply good I was worried.
+//
+//    Hubot word no - reply song portion array
+//
+//  Author:
+//    Jeramie Brehm
 
 //define song lyrics variable
 var birdWord = [

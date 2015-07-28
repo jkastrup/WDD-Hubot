@@ -1,20 +1,18 @@
-/*
-Description:
-   Simple Decision making responsibility offloader
-
-Dependencies:
-   None
-
-Configuration:
-   None
-
-Commands:
-   Hubot should I <Any question no matter how illogical>
-
-Contributor:
-   Daniel Carroll
-   dcarroll@fullsail.edu
-*/
+//  Description:
+//    Simple Decision making responsibility offloader.
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot should I <Any question no matter how illogical> - returns an answer to your question.
+//
+//  Author:
+//    Daniel Carrrol
+//    dcarroll@fullsail.edu
 
 //Beginning the script that listens to the user input!
 module.exports = function (robot) {

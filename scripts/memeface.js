@@ -1,24 +1,21 @@
-/*# Description:
-#   This will add meme faces to quotes
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
-# Commands:
-#   Hubot scouter - plan on linking to meme faces for different emoticons.
-#
-# Author:
-#   Douglas "DJay" Sweeting  e-mail at bidgsweetz@gmail.com
-#
-# Different meme faces for emoticons... */
-
-
+//  Description:
+//    This will add meme faces to quotes
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot scouter - plan on linking to meme faces for different emoticons.
+//
+//  Author:
+//    Douglas "DJay" Sweeting  e-mail at bidgsweetz@gmail.com
+//
 
 // make script visible to hubot
-// Listens for the word 'hype' 
+// Listens for the word 'hype'
 module.exports = function (robot) {
   "use strict";
   // Anytime the word 'sadface' is used by a user

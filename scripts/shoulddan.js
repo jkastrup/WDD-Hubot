@@ -1,20 +1,18 @@
-/*
- Description:
- An application for finding your place
-
- Dependencies:
- None
-
- Configuration:
- None
-
- Commands:
- Hubot should Daniel <Any statement at all>
-
- Contributor:
- Daniel Carroll
- dcarroll@fullsail.edu
- */
+//  Description:
+//    An application for finding your place.
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot should Daniel <any statement at all> - returns an answer.
+//
+//  Author:
+//    Daniel Carrrol
+//    dcarrol@fullsail.edu
 
 //Beginning the script that listens to the user input.
 module.exports = function (robot) {
