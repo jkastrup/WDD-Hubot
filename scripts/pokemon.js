@@ -1,3 +1,18 @@
+//  Description:
+//    Play a game of Pokemon with Hubot.
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot play pokemon - plays a game of Pokemon with Hubot.
+//
+//  Author:
+//    Unknown
+
 module.exports = function (robot) {
    return robot.respond(/play pokemon$/i, function (msg) { //Activate by saying hubot play pokemon
         var  charHp = 100,//set init HP
@@ -18,7 +33,7 @@ module.exports = function (robot) {
             };
         function question() { //function for user questions
             if (charHp <= 1 || urHP <= 1) { //cancel function if pokemon are dead
-                msg.send('Game Over'); 
+                msg.send('Game Over');
                 return true;
             }
            msg.send("\n" + 'What will do? ' + "\n" +
@@ -64,7 +79,7 @@ module.exports = function (robot) {
             }
             charHp -= dmg; //negates char hp based off move used
             //string for pikachus attack + charizard attacks from random function
-            msg.send('Pikachu used ' + attack + ' which did ' + dmg + ' damage! Charizard now has ' +  charHp + ' health!' + "\n" + random()[0] ); 
+            msg.send('Pikachu used ' + attack + ' which did ' + dmg + ' damage! Charizard now has ' +  charHp + ' health!' + "\n" + random()[0] );
             winnerCheck(); //checks winner
             question(); //asks question
         }
@@ -75,18 +90,18 @@ module.exports = function (robot) {
         robot.hear(/cut/i, function () { //listen for cut move then runs fight passing in the heard move
             fight(Object.keys(myAT)[3], myAT[Object.keys(myAT)[3]]);
             return true;
-        });	
-            
+        });
+
         robot.hear(/bolt/i, function () { //listen for bolt move then runs fight passing in the heard move
              fight(Object.keys(myAT)[2], myAT[Object.keys(myAT)[2]]);
              return true;
         });
-       
+
        robot.hear(/tackle/i, function () { //listen for tackle move then runs fight passing in the heard move
             fight(Object.keys(myAT)[1], myAT[Object.keys(myAT)[1]]);
             return true;
         });
-       
+
        robot.hear(/run/i, function (msg) { //listen for run then displays message
             if(charHp <= 1 || urHP <= 1){ //cancel if pokemon are dead
             return true;

@@ -1,26 +1,23 @@
-/**
- * Description
- *
- * Hubot is never gonna ...
- *
- * Dependencies
- *
- * None
- *
- * Commands
- *
- * Hubot never gonna - reply Like Rick Astley, Hubot is never gonna:
- *                     reply 1. Give you up.
- *                     reply 2. Let you down.
- *                     reply 3. Run around and desert you.
- *                     reply 4. Make you cry.
- *                     reply 5. Say goodbye.
- *                     reply 6. Tell a lie and hurt you.
- *
- * Author
- *
- * Jeramie Brehm
- */
+//  Description:
+//    Hubot never gonna - reply Like Rick Astley, Hubot is never gonna:
+//                     reply 1. Give you up.
+//                     reply 2. Let you down.
+//                     reply 3. Run around and desert you.
+//                     reply 4. Make you cry.
+//                     reply 5. Say goodbye.
+//                     reply 6. Tell a lie and hurt you.
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot never gonna - says what Hubot is never gonna do.
+//
+//  Author:
+//    Jeramie Brehm
 
 //define song lyrics variable
 var neverGonna = [

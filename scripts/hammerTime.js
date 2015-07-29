@@ -1,4 +1,18 @@
-//This is a hammer time give given my the command STOP!
+//  Description:
+//    This is a hammer time give given by the command STOP!
+//
+//  Dependencies:
+//    None
+//
+//  Configuration:
+//    None
+//
+//  Commands:
+//    Hubot stop - displays hammer time gif.
+//
+//  Author:
+//    Unknown
+//
 module.exports = function (robot) {
     return robot.respond(/stop$/i, function (msg) {
         //hubot displays gif
