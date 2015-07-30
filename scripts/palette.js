@@ -45,6 +45,6 @@ function getPallete(msg){
 
 module.exports = function (robot) {
     return robot.respond(/palette/i, function(msg){
-        getPallete(msg); //Call function
+        getPallete(msg);
     })
 };
