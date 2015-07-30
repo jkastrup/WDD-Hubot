@@ -25,10 +25,17 @@ function getPallete(msg){
             //Parse JSON
             var json = JSON.parse(body);
 
-            msg.send("Title: " + json[0].title);
-            msg.send("Colors: " + json[0].colors);
-            msg.send("Direct Link: " + json[0].url);
-            msg.send(json.imageUrl);
+            msg.send(
+                "Title: " + json[0].title + "\n"
+                + "Colors: " + json[0].colors + " \n"
+                + "Direct Link: " + json[0].url + "\n"
+                + json[0].imageUrl
+            );
+
+            //msg.send("Title: " + json[0].title);
+            //msg.send("Colors: " + json[0].colors);
+            //msg.send("Direct Link: " + json[0].url);
+            //msg.send(json[0].imageUrl);
         }else{
             msg.send("Something went wrong.");
         }
