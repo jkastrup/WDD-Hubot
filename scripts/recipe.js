@@ -19,19 +19,19 @@ function recipe(msg){
     var apiURL = 'http://api.campbellskitchen.com/brandservice.svc/api/search?keywords=chicken&format=json&app_id=8ca03727&app_key=' + key;
     // API request
     request(apiURL, function (error, response, body) {
-    if (!error && response.statusCode < 300){
-        //parse the json
-        var json = JSON.parse(response.body);
-        // finds a random recipe from the api and brings back the name, url and image 
-        var recipe = "Recipe Name: "+json.data.recipes.name +"\n\n"+"Link: "+json.data.recipes.recipelink+"\n\n"+json.data.recipes.thumbimg;
-                
+        if (!error && response.statusCode < 300){
+            //parse the json
+            var json = JSON.parse(response.body);
+            // finds a random recipe from the api and brings back the name, url and image 
+            var recipe = "Recipe Name: "+json.recipes[0].name +"\n\n"+"Link: "+json.recipes[0].recipelink+"\n\n"+json.recipes[0].thumbimg;
+                    
             msg.send(recipe);//displays the random recipe 
                 
         }else{
             //sends an error message if something goes wrong
-            msg.send("We are having some technical difficulties server side...");
+            msg.send(response.statusCode);
         } 
-    });
+    });//end request
 
 }
 
