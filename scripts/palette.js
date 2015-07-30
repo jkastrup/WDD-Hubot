@@ -13,9 +13,9 @@
 // Author:
 // Devin Metivier
 
-var request = require('request');
+var request = require('request'); //Requires request
 
-var apiUrl = 'http://www.colourlovers.com/api/palettes/random?format=json';
+var apiUrl = 'http://www.colourlovers.com/api/palettes/random?format=json'; //URL to API
 
 function getPallete(msg){
     //Make request to API
@@ -24,27 +24,27 @@ function getPallete(msg){
         if (!error && response.statusCode < 300){
             //Parse JSON
             var json = JSON.parse(body);
+            var json = json[0]; //set to new value due to array definition in API
 
             msg.send(
-                "Title: " + json[0].title + "\n"
-                + "Colors: " + json[0].colors + " \n"
-                + "Direct Link: " + json[0].url + "\n"
-                + json[0].imageUrl
+                "Title: " + json.title + "\n"
+                + "Colors: " + json.colors + " \n"
+                + "Direct Link: " + json.url + "\n"
+                + json.imageUrl
             );
 
-            //msg.send("Title: " + json[0].title);
-            //msg.send("Colors: " + json[0].colors);
-            //msg.send("Direct Link: " + json[0].url);
-            //msg.send(json[0].imageUrl);
         }else{
+            //Throw the error
             msg.send("Something went wrong.");
+            msg.send(response);
+            msg.send(response.statusCode);
+            msg.send(error);
         }
-
     });//end request
 }//close function
 
 module.exports = function (robot) {
     return robot.respond(/palette/i, function(msg){
-        getPallete(msg);
+        getPallete(msg); //Call function
     })
 };
