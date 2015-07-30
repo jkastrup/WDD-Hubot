@@ -23,7 +23,7 @@ function recipe(msg){
         //parse the json
         var json = JSON.parse(response.body);
         // finds a random recipe from the api and brings back the name, url and image 
-        var recipe = "Recipe Name: "+json.data.recipes.name +"\n\n"+"Link: "+json.data.recipes.recipelink+"\n\n"+"Description: "+json.data.recipes.thumbimg;
+        var recipe = "Recipe Name: "+json.data.recipes.name +"\n\n"+"Link: "+json.data.recipes.recipelink+"\n\n"+json.data.recipes.thumbimg;
                 
             msg.send(recipe);//displays the random recipe 
                 
