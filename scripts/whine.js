@@ -13,7 +13,8 @@
 // Author:
 // Devin Metivier
 
-var callYouOut = [
+//Messages/images to be displayed randomly
+var messages = [
     "Panzy.",
     "We got a whiner!",
     "http://www.quickmeme.com/img/49/49a360b15c4a1e03684be8bbbbf8d62b3047524a11cafbde92ba39b410937e9c.jpg",
@@ -25,16 +26,17 @@ var callYouOut = [
     "http://www.kappit.com/img/pics/59314520cfdgb.jpg"
 ];
 
-var call = function(msg){
-    keyword = msg;
+var callYouOut = function(msg){
+    keyword = msg; //keyword inside message
 
     if (keyword){
-        msg.send(msg.random(callYouOut));
-    }
-};
+        //if there is a keyword present in someone's message send random message/image in array
+        msg.send(msg.random(messages));
+    }//end if statement
+};//end function
 
 module.exports = function (robot) {
     return robot.hear(/\b(boring|bored|to hard| too hard|tired|tiring)\b/i, function(msg){
-        call(msg)
-    })
+        callYouOut(msg); //function call
+    });
 };
