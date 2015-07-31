@@ -15,7 +15,7 @@ var key = process.env.RECIPE_KEY;
 
 function recipe(msg) {
     //Variable for the api url
-    var apiURL = 'http://api.campbellskitchen.com/brandservice.svc/api/search?keywords=chicken&format=json&app_id=8ca03727&app_key=4709130053a023b732339ec3f5987291';
+    var apiURL = 'http://api.campbellskitchen.com/brandservice.svc/api/search?keywords=chicken&format=json&app_id=8ca03727&app_key=' + key;
     // API request
     request(apiURL, function (error, response, body) {
         if (!error && response.statusCode < 300) {
