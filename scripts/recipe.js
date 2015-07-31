@@ -24,7 +24,7 @@ function recipe(msg) {
             //generate a random number
             var rand = Math.floor(Math.random() * 20) + 1;
             //generate random recipe from the api and brings back the name, url and image
-            var recipe = "Recipe Name: " + json.recipes[rand].name + "\n\n" + "Link: http://www.campbellskitchen.com" + json.recipes[rand].thumbimg + "\n\n" + json.recipes[rand].recipelink;
+            var recipe = json.recipes[rand].name + "\n\n" + json.recipes[rand].recipelink + "\n\n" + "http://www.campbellskitchen.com" + json.recipes[rand].thumbimg;
             //display the random recipe
             msg.send(recipe);
         } else {
