@@ -13,31 +13,29 @@
 var request = require('request');
 var key = process.env.RECIPE_KEY;
 
-function recipe(msg){
-
+function recipe(msg) {
     //Variable for the api url
-    var apiURL = 'http://api.campbellskitchen.com/brandservice.svc/api/search?keywords=chicken&format=json&app_id=8ca03727&app_key=' + key;
+    var apiURL = 'http://api.campbellskitchen.com/brandservice.svc/api/search?keywords=chicken&format=json&app_id=8ca03727&app_key=4709130053a023b732339ec3f5987291';
     // API request
     request(apiURL, function (error, response, body) {
-        if (!error && response.statusCode < 300){
+        if (!error && response.statusCode < 300) {
             //parse the json
-            var json = JSON.parse(response.body);
-            // finds a random recipe from the api and brings back the name, url and image 
-            var recipe = "Recipe Name: "+json.recipes[0].name +"\n\n"+"Link: "+json.recipes[0].recipelink+"\n\n"+json.recipes[0].thumbimg;
-                    
-            msg.send(recipe);//displays the random recipe 
-                
-        }else{
+            var json = JSON.parse(body);
+            //generate a random number
+            var rand = Math.floor(Math.random() * 20) + 1;
+            //generate random recipe from the api and brings back the name, url and image
+            var recipe = "Recipe Name: " + json.recipes[rand].name + "\n\n" + "Link: http://www.campbellskitchen.com" + json.recipes[rand].thumbimg + "\n\n" + json.recipes[rand].recipelink;
+            //display the random recipe
+            msg.send(recipe);
+        } else {
             //sends an error message if something goes wrong
             msg.send(response.statusCode);
-        } 
+        }
     });//end request
-
 }
-
 //Listens for the dinner string and executes the function
-module.exports = function(robot) {
-  return robot.respond(/dinner$/i, function(msg) {
-     recipe(msg);
-  });
+module.exports = function (robot) {
+    return robot.respond(/dinner$/i, function (msg) {
+        recipe(msg);
+    });
 }
