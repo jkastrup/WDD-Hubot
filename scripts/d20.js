@@ -1,17 +1,17 @@
-#Description
-# Hubot will roll a 20 sided die for you
-#
-#Dependencies
-# None 
-#
-#Configuration
-# None 
-#
-#Command
-# Hubot roll d20
-#
-#Author
-# Ritchie Soricelli
+//Description
+//Hubot will roll a 20 sided die for you
+//
+//Dependencies
+//None 
+//
+//Configuration
+//None 
+//
+//Command
+//Hubot roll d20
+//
+//Author
+//Ritchie Soricelli
 
 
 module.exports = function (robot) {
