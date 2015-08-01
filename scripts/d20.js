@@ -2,10 +2,10 @@
 //Hubot will roll a 20 sided die for you
 //
 //Dependencies
-//None 
+//None
 //
 //Configuration
-//None 
+//None
 //
 //Command
 //Hubot roll d20
@@ -22,6 +22,6 @@ module.exports = function (robot) {
 
     return robot.respond(/roll d20/i, function (res) {
         res.send(Math.floor(Math.random() * 20 ) + 1);
-        
+
     });
 };
