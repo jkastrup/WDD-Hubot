@@ -16,6 +16,7 @@ module.exports = function (robot) {
                 myStory = story3;
                 return myStory;
         };
+            
         res.send(story(myStory));
     });
 };
