@@ -2,10 +2,10 @@
 //Hubot will roll a 20 sided die for you
 //
 //Dependencies
-//None 
+//None
 //
 //Configuration
-//None 
+//None
 //
 //Command
 //Hubot roll d20
