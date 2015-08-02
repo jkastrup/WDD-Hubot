@@ -17,8 +17,8 @@
 //None
 
 module.exports = function (robot) {
-    return robot.respond(/You're really bugging me/i, function (msg) {
+    return robot.hear(/Stop it/i, function (res) {
         //Han Solo "Who? Me?" gif is returned
-        msg.send('http://i.imgur.com/IKB69pa.gif');
+        res.send('http://i.imgur.com/IKB69pa.gif');
     });
 };
