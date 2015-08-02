@@ -11,7 +11,7 @@
 //Hubot You're really bugging me
 //
 //Author:
-//
+//Ritchie Soricelli
 //
 //Contributor:
 //None
