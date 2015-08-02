@@ -17,8 +17,8 @@
 //None
 
 module.exports = function (robot) {
-    return robot.respond(/You're really bugging me/i, function (res) {
+    return robot.respond(/You're really bugging me/i, function (msg) {
         //Han Solo "Who? Me?" gif is returned
-res.send('http://tattoosandstardestroyers.tumblr.com/post/64829754547');
+msg.send('http://tattoosandstardestroyers.tumblr.com/post/64829754547');
     });
 };
