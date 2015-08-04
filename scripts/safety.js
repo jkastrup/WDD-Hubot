@@ -19,6 +19,7 @@
 module.exports = function (robot) {
     return robot.hear(/safety/i, function (res) {
         //Safety dance gif is returned
+        //You can leave your friends behind
         res.send('Safety?  You can dance if you want to...');
         res.send('http://cdn.yourepeat.com/media/gif/000/035/391/59c8864506531f7d8cdff497ecb6ef3d.gif');
     });
