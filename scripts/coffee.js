@@ -4,11 +4,15 @@
 // Commands:
 //  Hubot coffee - displays a quote and an image
 //
-// Author: 
-//  Steve Dolan
-// 
+// Dependencies:
+//  None
+//
+// Author:
+//  Steve Dolan | stevedolan@fullsail.edu
+//
 // Date:
 //  August 4, 2015
+
 
 
 // Robot Function
@@ -16,8 +20,8 @@ module.exports = function(robot){
     // Hubot returns a message and an image from Jerry Seinfeld
     return robot.respond(/coffee/i,function(msg){
         //Sends a quote
-        msg.send("We want to do a lot of stuff; we’re not in great shape. We didn’t get a good night’s sleep. We’re a little depressed. Coffee solves all these problems in one delightful little cup.");
+        msg.send('We want to do a lot of stuff; we’re not in great shape. We didn’t get a good night’s sleep. We’re a little depressed. Coffee solves all these problems in one delightful little cup. - Jerry Seinfeld');
         //Sends an images of Jerry
-        msg.send("http://cdn.firstwefeast.com/assets/2014/04/1Jerry_Seinfeld_by_David_Shankbone-jpg.jpg");
+        msg.send('http://1.bp.blogspot.com/-AGdMdfvtPbQ/Vae-YAhtnVI/AAAAAAAAFRg/OPKwgGBVzTA/s1600/coffee-and-breakfast1.png');
     });
 };
