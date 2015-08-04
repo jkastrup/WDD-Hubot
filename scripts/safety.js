@@ -8,7 +8,7 @@
 //None
 //
 //Commands:
-//safety - When the word safety is typed into Slack Hubot will respond with the Safety Dance
+//safety - When the word safety is typed into Slack, Hubot will respond with the Safety Dance
 //
 //Author:
 //Ritchie Soricelli
