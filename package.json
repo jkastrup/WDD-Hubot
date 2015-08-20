@@ -3,6 +3,9 @@
   "version": "3.2.2",
   "private": true,
   "author": "Chris Chapman",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
   "contributors": [
     {
       "name": "Anthony Kluba",
