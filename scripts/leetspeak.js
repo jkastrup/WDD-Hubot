@@ -31,7 +31,7 @@ function leetSpeakVal(msg){
       "Accept": "text/plain"
     }
   };
-  //check if only nubers (numbers don't leet speak well.)
+  //check if only nubers ( numbers don't leet speak well.)
   if(!isNaN(input)){
     msg.send('Please enter some words!');
   }else{
