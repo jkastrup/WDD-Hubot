@@ -5,7 +5,7 @@
 // None
 //
 //Commands
-// Hubot shake it off - Displays a video of dogs dancing to Taylor Swift's Shake It Off.
+// Hubot shake it off - Displays a gif of bear dancing with kids.
 //
 // Author
 // Ashley Crane
@@ -16,10 +16,10 @@
 //
 
 
-// Listens for the phrase fresh dance and calls the function to display the video url/video
+// Listens for the phrase shake it off and calls the function to display the gif link/gif
 module.exports = function (robot) {
     return robot.respond(/shake it off/i, function (msg){
         
-        msg.send('https://www.youtube.com/watch?v=aXtiAUPWttQ');
+        msg.send('http://cheezburger.com/6994177536');
     });
 };
