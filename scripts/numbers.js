@@ -8,7 +8,7 @@
 //   None
 //
 // Commands:
-//   Hubot numbers <number> -  Returns a random fact back about the number you input. 
+//   Hubot number <number> -  Returns a random fact back about the number you input. 
 //
 // Author:
 //   Jason Woods
