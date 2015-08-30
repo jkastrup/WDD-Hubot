@@ -172,7 +172,7 @@ function marvelWikiSearch(msg, characterName){
 					msg.send("I had to do some digging, but I found " + marvelWikiPageTitle + " on http://www.marvel.com" + marvelWikiPageLink + " . Hope that's the right character.");
 				});
 			}else{
-				msg.send("I couldn't find anything for "+ characterName +". Are you sure they are a Marvel character? Can you check the spelling and try again?");
+				msg.send("Sorry, but the superhero you were trying to reach is not available right now or simply doesn't exist. Please check the character name and try again later.");
 			}
 		}else{
 			msg.send("Marvel's sites might be down right now, please try again later.");
