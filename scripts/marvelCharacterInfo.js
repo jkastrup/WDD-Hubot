@@ -40,7 +40,7 @@ function marvelCharacterAPISearch(msg){
 
 	// test if the character name was entered or if it was empty / nothing was entered
 	if(marvelCharacter.length == 0){
-		msg.send("It looks like you did not enter a character name, please try again. IE: hubot marvel Thor");
+		msg.send("Whoa there buddy! Why don't you help us out a little bit by giving us the name of the Marvel superhero your trying to find, IE: hubot marvel Thor");
 		return;
 	}else{
 		// nothing to do here
