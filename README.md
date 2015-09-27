@@ -9,7 +9,7 @@
 [wddhubot]: https://github.com/reactivepixel/WDD-Hubot/fork
 [xcode]: https://itunes.apple.com/us/app/xcode/id497799835
 
-# WDD-Hubot
+# WDD-Hubot Code
 
 ![Code Climate][codeClimate]
 
