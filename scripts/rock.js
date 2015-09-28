@@ -1,11 +1,11 @@
-
+/*adding link for stone with 'rock me' */
 module.exports = function (robot) {
-    return robot.respond(/rock me/i, function (msg){
+    return robot.respond(/stone me/i, function (msg){
         
-        msg.send('https://en.wikipedia.org/wiki/Malachite');
+        msg.send('https://www.facebook.com/FortuneOpal/photos/a.595456520533664.1073741827.595454610533855/897357000343613/?type=3&theater');
     });
 };
-
+/*adding a link for stone with cling me*/
 module.exports = function (robot) {
     return robot.respond(/bling me/i, function (msg){
         
