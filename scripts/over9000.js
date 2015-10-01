@@ -14,7 +14,6 @@
 
 module.exports = function (robot) {
     return robot.respond(/it's over 9000!/i, function (msg){
-        
         msg.send('https://youtu.be/SiMHTK15Pik');
     });
 };
