@@ -142,7 +142,11 @@ function fixCity(msg,city){
 		// case "los-angeles":
 		// 	city = "la";
 		// 	break;
-
+		
+		case "charleston":
+			city = "chas";
+			break;
+			
 		case "las-vegas":
 			city = "vegas";
 			break;
