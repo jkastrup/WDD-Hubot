@@ -5,16 +5,16 @@
 // None
 //
 //Commands
-// have you seen my dog
+// Have you seen my dog
 //
 // Author
 // Julie Lucas
-// julieclucas@att.net
 
 
 module.exports = function (robot) {
-    return robot.respond(/have you seen my dog/i, function (msg){
+    return robot.hear(/Have you seen my dog?/i, function (res) {
         
-        msg.send('https://www.petfinder.com/pet-adoption/dog-adoption/');
+        res.send('No, I have not. Check on pet-finders.com');
+
     });
 };
