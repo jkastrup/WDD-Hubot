@@ -18,6 +18,6 @@
 module.exports = function (robot) {
     robot.hear(/kitty/i, function(res){    
 		// Displays randoml cat gif
-		res.send("http://thecatapi.com/api/images/get?format=src&type=gif");
+		res.send("http://thecatapi.com/api/images/get?format=src&type=jpg");
     });
 };  
